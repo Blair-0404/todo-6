@@ -6,6 +6,7 @@
     "lint": "tslint --project \"tsconfig.json\"",
     "start": "node -r module-alias/register ./dist --env=production",
     "start:dev": "nodemon",
+    "devserver": "webpack-dev-server",
     "test": "nodemon --config ./spec/nodemon.json",
     "front-test": "node build.js &&  webpack && node -r module-alias/register ./dist --env=production",
     "build-webpack": "webpack"
@@ -77,6 +78,7 @@
     "tslint": "^6.1.2",
     "typescript": "^3.9.6",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
